@@ -1,0 +1,8 @@
+experiment,scenes,levels,seed_first,layouts,queries_per_map,scene_rng,query_rng,extra
+E1,all,all,0,4,2,"crc32('paper|{scene}|{level}|{seed}')","crc32('q1|{scene}|{level}|{seed}')",fifteen planners; reference = visibility graph
+E2,all,all,100,6,3,"crc32('paper|{scene}|{level}|{seed}')","crc32('q2|{scene}|{level}|{seed}')",TVE vs WDT without cache; execution order alternates with the query index
+E3,all,medio,200,2,25,"crc32('paper|{scene}|{level}|{seed}')","crc32('q3|{scene}|{level}|{seed}')",min_sep=0.30; consecutive queries on the same map
+E4,office;warehouse;plaza,medio,300,2,2,"crc32('paper|{scene}|{level}|{seed}')","crc32('q4|{scene}|{seed}')",map sides 200;300;400;600;800;1000;1200 px; visibility graph only up to 800 px
+E5,all,facil;medio,400,3,2,"crc32('paper|{scene}|{level}|{seed}')","crc32('q5|{scene}|{level}|{seed}')",event: person (disk r=0.3 m) or cart (1.0x0.6 m) at a random fraction 0.35-0.65 of the TVE route
+E6,all,all,500,3,2,"crc32('paper|{scene}|{level}|{seed}')","crc32('q6|{scene}|{level}|{seed}')",ablation variants in configs/tve.json
+E7,all,all,600,4,3,"crc32('paper|{scene}|{level}|{seed}')","crc32('q7|{scene}|{level}|{seed}')",K = 1;2;4;8
