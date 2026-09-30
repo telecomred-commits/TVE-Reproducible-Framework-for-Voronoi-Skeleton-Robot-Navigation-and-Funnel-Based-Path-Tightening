@@ -1,0 +1,71 @@
+{
+  "_description": "TVE parameters exactly as used. 'planner' = TVEConfig passed to TVEPlanner in E2, E3, E5, E6 and E7 (fillet radius = R_min = 0.8 m). 'registry' = parameters of the common planner interface used in E1 and E4, where the fillet radius was the interface default of 1.0 m (target radius >= R_min) and the cache was disabled. Distances in meters.",
+  "planner": {
+    "robot_diameter": 0.45,
+    "safety_margin": 0.0,
+    "dilation_shape": "disk",
+    "generators": "auto",
+    "segment_size": 2.0,
+    "node_merge_dist": 3.0,
+    "candidates": 4,
+    "clearance_extra": 0.1,
+    "smoothing": "arcos",
+    "turn_radius": 0.8,
+    "edge_weight": "cuerda",
+    "weight_alpha": 0.25,
+    "portal_min_angle": 0.0,
+    "portal_min_cross": 45.0,
+    "portal_mode": "ambos",
+    "portal_drop_invalid": true,
+    "multi_attach": true,
+    "fast_check": true
+  },
+  "registry": {
+    "candidatas": 4,
+    "holgura_extra_m": 0.1,
+    "suavizado": "arcos",
+    "radio_suavizado_m": 1.0,
+    "portales": "ambos",
+    "generadores": "auto",
+    "usar_cache": false
+  },
+  "ablation_E6": {
+    "TVE (full)": {},
+    "K = 1 candidate": {
+      "candidates": 1
+    },
+    "K = 8 candidates": {
+      "candidates": 8
+    },
+    "tile portals only": {
+      "portal_mode": "teselas"
+    },
+    "disc portals only": {
+      "portal_mode": "disco"
+    },
+    "single connector": {
+      "multi_attach": false
+    },
+    "exact collision test only": {
+      "fast_check": false
+    },
+    "per-obstacle generators": {
+      "generators": "obstacles"
+    },
+    "skeleton length weights": {
+      "edge_weight": "longitud"
+    },
+    "Bezier smoothing": {
+      "smoothing": "bezier"
+    },
+    "no smoothing": {
+      "smoothing": "ninguno"
+    }
+  },
+  "candidates_E7": [
+    1,
+    2,
+    4,
+    8
+  ]
+}

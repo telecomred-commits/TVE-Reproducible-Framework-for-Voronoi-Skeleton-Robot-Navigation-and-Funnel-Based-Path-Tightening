@@ -1,0 +1,28 @@
+{
+  "_description": "Image-processing parameters (src/perception/pipeline.py::PerceptionParams). max_side is set by the experiment (map side in pixels).",
+  "parameters": {
+    "method": "piso",
+    "denoise": 7,
+    "shadow_weight": 0.5,
+    "asymmetric_light": true,
+    "threshold": 3.0,
+    "color_noise": 2.0,
+    "illumination": true,
+    "local_contrast": true,
+    "local_window": 0.08,
+    "local_factor": 1.0,
+    "hysteresis": 1.0,
+    "k_clusters": 6,
+    "floor_merge": 3.0,
+    "open_px": 1,
+    "close_px": 3,
+    "fill_holes": true,
+    "max_hole_frac": 0.01,
+    "min_area_frac": 0.0001,
+    "convex_hull": false,
+    "extra_dilate_px": 2,
+    "floor_samples": [],
+    "sample_radius": 7,
+    "seed": 0
+  }
+}

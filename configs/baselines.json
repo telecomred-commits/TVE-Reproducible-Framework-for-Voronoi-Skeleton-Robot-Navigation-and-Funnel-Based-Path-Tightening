@@ -1,0 +1,142 @@
+{
+  "_description": "Parameters passed to every baseline through the common planner interface (src/registry.py). They are the defaults of the implementations, fixed before the experiments and identical for every map and query; hybrid_astar uses radio_giro_m = R_min. 'wdt_planner' is the PlannerConfig used when WDT is called directly (E2, E3). Parameter names follow the source code (Spanish identifiers); see 'glossary'.",
+  "planners": {
+    "teselado": {
+      "generadores": "obstacles",
+      "suavizado": "piecewise"
+    },
+    "dijkstra": {
+      "celda": 2,
+      "diagonal": true
+    },
+    "astar": {
+      "celda": 2,
+      "peso": 1.0,
+      "diagonal": true
+    },
+    "theta": {
+      "celda": 2
+    },
+    "visibility": {
+      "tolerancia_poligono": 1.0
+    },
+    "rrt": {
+      "paso_m": 0.5,
+      "iteraciones": 6000,
+      "sesgo_meta": 0.08,
+      "semilla": 0
+    },
+    "rrt_star": {
+      "paso_m": 0.5,
+      "iteraciones": 4000,
+      "sesgo_meta": 0.05,
+      "gamma": 2.5,
+      "semilla": 0
+    },
+    "prm": {
+      "muestras": 600,
+      "vecinos": 12,
+      "semilla": 0
+    },
+    "potential": {
+      "rango_repulsion_m": 0.6,
+      "ganancia_repulsion": 1.0,
+      "escape_aleatorio": true,
+      "semilla": 0
+    },
+    "hybrid_astar": {
+      "radio_giro_m": 0.8,
+      "paso_m": 0.35,
+      "curvaturas": 5,
+      "reversa": false,
+      "orientacion_inicial": "hacia T"
+    },
+    "aco": {
+      "celda": 4,
+      "hormigas": 40,
+      "iteraciones": 40,
+      "alfa": 1.0,
+      "beta": 2.0,
+      "evaporacion": 0.25,
+      "elitismo": 2.0,
+      "semilla": 0
+    },
+    "topological": {
+      "celda": 3,
+      "clases": 6,
+      "longitud_palabra": 4
+    },
+    "slam": {
+      "rango_lidar_m": 3.0,
+      "haces": 180,
+      "ruido_odometria": 0.02,
+      "deriva_giro_deg": 0.08,
+      "localizacion": true,
+      "paso_m": 0.15,
+      "semilla": 0
+    },
+    "drl": {
+      "semilla": 0,
+      "max_pasos": 0
+    }
+  },
+  "wdt_planner": {
+    "robot_diameter": 0.45,
+    "safety_margin": 0.0,
+    "dilation_shape": "disk",
+    "generators": "obstacles",
+    "segment_size": 2.0,
+    "node_merge_dist": 3.0,
+    "route_method": "paper",
+    "optimize": false,
+    "reduction_min_dist": null,
+    "reduction_max_cycles": 60,
+    "smoothing": "piecewise",
+    "smoothing_tension": 1.0,
+    "smoothing_weight_gain": 1.0,
+    "smoothing_samples_per_px": 1.0,
+    "collision_step": 0.25
+  },
+  "glossary": {
+    "celda": "grid cell size [px]",
+    "diagonal": "8-connected moves",
+    "peso": "A* heuristic weight",
+    "paso_m": "step / primitive length [m]",
+    "iteraciones": "iterations",
+    "sesgo_meta": "goal bias",
+    "gamma": "RRT* rewiring radius constant",
+    "semilla": "random seed",
+    "muestras": "PRM samples",
+    "vecinos": "PRM neighbours k",
+    "rango_repulsion_m": "APF repulsion range [m]",
+    "ganancia_repulsion": "APF repulsive gain",
+    "escape_aleatorio": "APF random-walk escape",
+    "tolerancia_poligono": "polygon approximation tolerance [px]",
+    "radio_giro_m": "turning radius [m]",
+    "curvaturas": "number of curvatures",
+    "reversa": "reverse motions",
+    "orientacion_inicial": "initial heading ('hacia T' = towards T)",
+    "hormigas": "ants",
+    "alfa": "pheromone weight",
+    "beta": "heuristic weight",
+    "evaporacion": "evaporation rate",
+    "elitismo": "elitist reinforcement",
+    "clases": "homotopy classes K",
+    "longitud_palabra": "max. word length",
+    "rango_lidar_m": "LiDAR range [m]",
+    "haces": "LiDAR beams",
+    "ruido_odometria": "odometry noise",
+    "deriva_giro_deg": "heading drift [deg/step]",
+    "localizacion": "scan matching enabled",
+    "max_pasos": "max. steps (0 = auto)",
+    "optimizar": "WDT own optimizations (False = original method)",
+    "generadores": "generators",
+    "suavizado": "smoothing",
+    "rutas": "route method ('paper' = greedy + n-1)",
+    "candidatas": "TVE candidates K",
+    "holgura_extra_m": "TVE extra clearance [m]",
+    "radio_suavizado_m": "TVE fillet radius [m]",
+    "portales": "TVE portal families",
+    "usar_cache": "TVE cache"
+  }
+}

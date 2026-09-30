@@ -1,0 +1,22 @@
+{
+  "_description": "Training configuration of the D3QN baseline (double dueling DQN with n-step returns), read from the metadata of the model used in the paper (src/baselines/models/drl_dqn.pt). Training took 557 s on the CPU described in the README. Retraining is not needed to reproduce the paper: the experiments load the shipped model. Because of floating-point non-associativity in PyTorch, a retrained model is statistically equivalent but not bit-identical.",
+  "observation_size": 336,
+  "cell_m": 0.25,
+  "actions": 8,
+  "config": {
+    "total_steps": 1000000,
+    "n_envs": 32,
+    "buffer": 150000,
+    "batch": 256,
+    "lr": 0.0003,
+    "gamma": 0.97,
+    "nstep": 3,
+    "tau": 0.01,
+    "eps_start": 1.0,
+    "eps_end": 0.05,
+    "eps_frac": 0.6,
+    "updates_per_step": 4,
+    "map_every": 8,
+    "seed": 0
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "_description": "Ranges of the image-formation model for the three difficulty levels (image_formation/model.py). Each image draws its conditions uniformly within these ranges. Keys: min_contrast = Delta E (CIE-Lab); shadow = max. darkening; light_gradient = +/- illumination variation; vignette; noise = Gaussian sigma (0-1); blur = Gaussian sigma [px]; jpeg = quality; perspective = camera tilt factor.",
+  "levels": {
+    "facil": {
+      "textures": [
+        "uniforme",
+        "alfombra"
+      ],
+      "min_contrast": [
+        40,
+        60
+      ],
+      "shadow": [
+        0.0,
+        0.15
+      ],
+      "light_gradient": [
+        0.0,
+        0.1
+      ],
+      "vignette": [
+        0.0,
+        0.08
+      ],
+      "noise": [
+        0.005,
+        0.015
+      ],
+      "blur": [
+        0.0,
+        0.5
+      ],
+      "jpeg": [
+        85,
+        95
+      ],
+      "perspective": [
+        0.0,
+        0.0
+      ]
+    },
+    "medio": {
+      "textures": [
+        "uniforme",
+        "alfombra",
+        "madera",
+        "baldosa",
+        "concreto"
+      ],
+      "min_contrast": [
+        25,
+        40
+      ],
+      "shadow": [
+        0.2,
+        0.4
+      ],
+      "light_gradient": [
+        0.1,
+        0.25
+      ],
+      "vignette": [
+        0.05,
+        0.2
+      ],
+      "noise": [
+        0.01,
+        0.025
+      ],
+      "blur": [
+        0.3,
+        0.9
+      ],
+      "jpeg": [
+        70,
+        90
+      ],
+      "perspective": [
+        0.0,
+        0.12
+      ]
+    },
+    "dificil": {
+      "textures": [
+        "madera",
+        "baldosa",
+        "concreto",
+        "alfombra"
+      ],
+      "min_contrast": [
+        15,
+        25
+      ],
+      "shadow": [
+        0.35,
+        0.55
+      ],
+      "light_gradient": [
+        0.25,
+        0.4
+      ],
+      "vignette": [
+        0.15,
+        0.3
+      ],
+      "noise": [
+        0.025,
+        0.04
+      ],
+      "blur": [
+        0.6,
+        1.3
+      ],
+      "jpeg": [
+        50,
+        70
+      ],
+      "perspective": [
+        0.1,
+        0.22
+      ]
+    }
+  }
+}

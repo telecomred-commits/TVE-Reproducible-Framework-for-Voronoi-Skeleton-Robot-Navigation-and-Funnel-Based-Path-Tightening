@@ -1,0 +1,63 @@
+{
+  "_description": "Global settings shared by experiments E1-E7.",
+  "robot_diameter_m": 0.45,
+  "ackermann_min_turning_radius_m": 0.8,
+  "map_side_px": 400,
+  "ground_truth_side_px": 640,
+  "camera_image_size_hw": [
+    720,
+    960
+  ],
+  "corner_marking_error_px": 2.0,
+  "levels": [
+    "facil",
+    "medio",
+    "dificil"
+  ],
+  "level_names_in_paper": {
+    "facil": "low",
+    "medio": "medium",
+    "dificil": "high"
+  },
+  "query_min_separation_fraction": 0.45,
+  "differential_drive": {
+    "v_m_s": 1.0,
+    "omega_deg_s": 90.0
+  },
+  "ground_truth_safety_max_penetration_px": 1.0,
+  "planners_e1": [
+    "tve",
+    "teselado",
+    "dijkstra",
+    "astar",
+    "theta",
+    "visibility",
+    "rrt",
+    "rrt_star",
+    "prm",
+    "potential",
+    "hybrid_astar",
+    "aco",
+    "topological",
+    "slam",
+    "drl"
+  ],
+  "planner_names_in_paper": {
+    "tve": "TVE (proposed)",
+    "teselado": "WDT",
+    "dijkstra": "Dijkstra",
+    "astar": "A*",
+    "theta": "Theta*",
+    "visibility": "Visibility graph",
+    "rrt": "RRT",
+    "rrt_star": "RRT*",
+    "prm": "PRM",
+    "potential": "APF",
+    "hybrid_astar": "Hybrid A*",
+    "aco": "ACO",
+    "topological": "Homotopy planner",
+    "slam": "SLAM-based",
+    "drl": "DRL (D3QN)"
+  },
+  "threads_per_process": 1
+}

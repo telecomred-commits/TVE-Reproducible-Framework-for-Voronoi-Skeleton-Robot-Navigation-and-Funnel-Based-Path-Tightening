@@ -1,0 +1,33 @@
+{
+  "_description": "Scene types: generator in scenes/generators.py and floor side [m].",
+  "scenes": {
+    "office": {
+      "generator": "office",
+      "side_m": 12.0
+    },
+    "warehouse": {
+      "generator": "warehouse",
+      "side_m": 16.0
+    },
+    "home": {
+      "generator": "home",
+      "side_m": 10.0
+    },
+    "workshop": {
+      "generator": "workshop",
+      "side_m": 12.0
+    },
+    "store": {
+      "generator": "store",
+      "side_m": 14.0
+    },
+    "plaza": {
+      "generator": "plaza",
+      "side_m": 18.0
+    },
+    "hospital": {
+      "generator": "hospital",
+      "side_m": 14.0
+    }
+  }
+}
