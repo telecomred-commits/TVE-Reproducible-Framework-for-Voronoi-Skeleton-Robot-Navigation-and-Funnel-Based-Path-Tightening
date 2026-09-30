@@ -1,0 +1,151 @@
+planner,queries,cumulative_time_s_median
+TVE (proposed),1,0.0260108
+TVE (proposed),2,0.0351136
+TVE (proposed),3,0.0416938
+TVE (proposed),4,0.0509866
+TVE (proposed),5,0.0592104
+TVE (proposed),6,0.0686618
+TVE (proposed),7,0.0793444
+TVE (proposed),8,0.0874743
+TVE (proposed),9,0.0947455
+TVE (proposed),10,0.104505
+TVE (proposed),11,0.111145
+TVE (proposed),12,0.118921
+TVE (proposed),13,0.127043
+TVE (proposed),14,0.133606
+TVE (proposed),15,0.141851
+TVE (proposed),16,0.152806
+TVE (proposed),17,0.158035
+TVE (proposed),18,0.164115
+TVE (proposed),19,0.170627
+TVE (proposed),20,0.18624
+TVE (proposed),21,0.192424
+TVE (proposed),22,0.198458
+TVE (proposed),23,0.206436
+TVE (proposed),24,0.213511
+TVE (proposed),25,0.218913
+WDT,1,0.0450452
+WDT,2,0.0597155
+WDT,3,0.0685022
+WDT,4,0.0827468
+WDT,5,0.0905343
+WDT,6,0.102999
+WDT,7,0.117661
+WDT,8,0.130109
+WDT,9,0.142901
+WDT,10,0.156107
+WDT,11,0.165485
+WDT,12,0.177303
+WDT,13,0.191169
+WDT,14,0.199891
+WDT,15,0.211759
+WDT,16,0.224279
+WDT,17,0.249532
+WDT,18,0.258132
+WDT,19,0.266232
+WDT,20,0.278477
+WDT,21,0.288786
+WDT,22,0.298466
+WDT,23,0.311505
+WDT,24,0.31719
+WDT,25,0.32965
+A*,1,0.0041948
+A*,2,0.0067211
+A*,3,0.0117723
+A*,4,0.017314
+A*,5,0.0197325
+A*,6,0.02332
+A*,7,0.0287699
+A*,8,0.032118
+A*,9,0.0340949
+A*,10,0.0382316
+A*,11,0.0472676
+A*,12,0.0541478
+A*,13,0.0562908
+A*,14,0.063459
+A*,15,0.0662599
+A*,16,0.0680278
+A*,17,0.0722671
+A*,18,0.079292
+A*,19,0.0862307
+A*,20,0.0909348
+A*,21,0.092968
+A*,22,0.0950787
+A*,23,0.0985136
+A*,24,0.102802
+A*,25,0.10502
+Theta*,1,0.447391
+Theta*,2,0.670277
+Theta*,3,0.913628
+Theta*,4,1.29124
+Theta*,5,1.42959
+Theta*,6,1.65549
+Theta*,7,2.26125
+Theta*,8,2.51683
+Theta*,9,2.79971
+Theta*,10,3.23883
+Theta*,11,3.99654
+Theta*,12,4.42183
+Theta*,13,5.06356
+Theta*,14,5.57958
+Theta*,15,5.85826
+Theta*,16,5.94243
+Theta*,17,6.35487
+Theta*,18,6.93233
+Theta*,19,7.57553
+Theta*,20,8.11859
+Theta*,21,8.17895
+Theta*,22,8.33238
+Theta*,23,8.63808
+Theta*,24,8.93933
+Theta*,25,9.14366
+PRM,1,0.657073
+PRM,2,1.29939
+PRM,3,1.94136
+PRM,4,2.55874
+PRM,5,3.19023
+PRM,6,3.81859
+PRM,7,4.45353
+PRM,8,5.08615
+PRM,9,5.74221
+PRM,10,6.37821
+PRM,11,6.9892
+PRM,12,7.59042
+PRM,13,8.19984
+PRM,14,8.83888
+PRM,15,9.48104
+PRM,16,10.1162
+PRM,17,10.768
+PRM,18,11.4207
+PRM,19,12.0539
+PRM,20,12.7075
+PRM,21,13.3408
+PRM,22,13.9675
+PRM,23,14.588
+PRM,24,15.2278
+PRM,25,15.8724
+Visibility graph,1,3.21734
+Visibility graph,2,6.45665
+Visibility graph,3,9.58518
+Visibility graph,4,12.6945
+Visibility graph,5,15.7818
+Visibility graph,6,18.8904
+Visibility graph,7,21.9832
+Visibility graph,8,25.0825
+Visibility graph,9,28.1565
+Visibility graph,10,31.2736
+Visibility graph,11,34.3893
+Visibility graph,12,37.5452
+Visibility graph,13,40.6893
+Visibility graph,14,43.8581
+Visibility graph,15,47.0445
+Visibility graph,16,50.177
+Visibility graph,17,53.2968
+Visibility graph,18,56.4566
+Visibility graph,19,59.571
+Visibility graph,20,62.7503
+Visibility graph,21,65.9054
+Visibility graph,22,69.0052
+Visibility graph,23,72.1346
+Visibility graph,24,75.3094
+Visibility graph,25,78.414

@@ -1,0 +1,8 @@
+scene,tve_valid_pct,tve_L_ratio,tve_time_ms,wdt_valid_pct,wdt_L_ratio,wdt_time_ms,best_other,best_other_L_ratio,best_other_time_ms
+Office,100,1.00645,25.277,100,1.06605,39.2058,RRT*,1.00299,1891.76
+Warehouse,100,1.00396,44.253,100,1.0865,33.084,RRT*,1.00155,1796.7
+Apartment,100,1.00524,40.518,100,1.04382,89.9805,RRT*,1.0015,1956.69
+Workshop,100,1.00296,20.8139,100,1.01402,42.0703,Homotopy planner,1.00013,291.927
+Retail store,100,1.00551,24.7758,100,1.06458,40.6847,RRT*,1.00394,1775.05
+Outdoor plaza,100,1.00282,24.908,100,1.01759,51.2397,Homotopy planner,1.00186,297.61
+Hospital ward,100,1.01136,42.2455,100,1.03993,349.465,Homotopy planner,1.00599,75.7223

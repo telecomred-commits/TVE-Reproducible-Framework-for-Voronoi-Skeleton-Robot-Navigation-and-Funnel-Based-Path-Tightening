@@ -1,0 +1,5 @@
+K,candidates,classes,optimal_class_among_candidates_pct,final_in_optimal_class_pct,L_ratio,L_ratio_p90
+1,1,1,78,78,1.00761,1.1346
+2,1.88,1.792,87.2,85.6,1.00636,1.08413
+4,3.436,3.16,93.6,91.6,1.0056,1.06975
+8,6.008,5.216,97.2,94,1.0052,1.07318

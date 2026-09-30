@@ -1,0 +1,4 @@
+level,iou,recall,objects_detected_pct,perception_time_ms,tve_valid_pct,tve_gt_safe_pct,all_gt_safe_pct
+low,0.887454,1,100,148.31,100,100,100
+medium,0.807,0.99997,100,153.396,100,100,100
+high,0.71467,0.939383,94.7715,179.859,100,85.7143,85.1145

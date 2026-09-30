@@ -1,0 +1,57 @@
+VERIFICATION OF THE REPRODUCIBILITY PACKAGE
+===========================================
+
+Full re-execution of E1-E7 from this package (python paper_experiments.py all --workers 8)
+compared with the raw results of the paper (python verify.py).
+
+1. Geometric, topological and image-processing results (all non-timing columns)
+------------------------------------------------------------------------------
+Boolean/categorical columns must be identical; numeric columns are compared with a relative
+tolerance of 1e-5 (vectorized NumPy reductions may differ in the last bits).
+
+E1: 2520 runs, 27 non-timing columns equal; 9 numeric values differ only by floating-point rounding (max. relative difference 1.2e-06)
+E2: 756 runs, 27 non-timing columns equal; 8 numeric values differ only by floating-point rounding (max. relative difference 4.7e-08)
+E3: 2100 runs, 1 non-timing columns equal; all values bit-identical
+E4: 564 runs, 2 non-timing columns equal; all values bit-identical
+E5: 608 runs, 4 non-timing columns equal; all values bit-identical
+E6: 1386 runs, 17 non-timing columns equal; 6 numeric values differ only by floating-point rounding (max. relative difference 1.0e-09)
+E7: 1000 runs, 7 non-timing columns equal; all values bit-identical
+
+All 8934 runs were reproduced. Only 23 numeric values differ, by floating-point rounding
+(maximum relative difference 1.2e-06); every validity flag, safety flag, Ackermann flag and homotopy
+class is identical.
+
+2. Computation times (hardware and load dependent)
+--------------------------------------------------
+The re-execution ran on the same computer as the paper but under a different load; absolute times
+were about 4 times larger. The relative conclusions are preserved: paired speed-up of TVE over WDT,
+share of queries in which TVE is faster, Friedman ranks, and all length/topology results.
+
+Values of the macros quoted in the manuscript, computed from results/raw (paper) and from the
+re-execution (python statistics/analyze.py --raw results/rerun):
+
+TveT         paper=                          28   re-execution=                         107
+WdtT         paper=                          46   re-execution=                         172
+VisT         paper=                        3081   re-execution=                       14592
+RrtsT        paper=                        1836   re-execution=                        9289
+ThetaT       paper=                         370   re-execution=                        1847
+AstarT       paper=                           5   re-execution=                          16
+SpMed        paper=                        1.82   re-execution=                        1.73
+SpLo         paper=                        1.75   re-execution=                        1.68
+SpHi         paper=                        1.86   re-execution=                        1.79
+SpFaster     paper=                        86.5   re-execution=                        87.0
+SpP          paper==\ensuremath{1.6\times 10^{-46}}   re-execution==\ensuremath{1.6\times 10^{-44}}
+PairTveT     paper=                        26.0   re-execution=                       106.0
+PairWdtT     paper=                        43.4   re-execution=                       170.1
+TessTve      paper=                         6.4   re-execution=                        22.1
+TessWdt      paper=                        18.8   re-execution=                        65.1
+MqTveRest    paper=                         7.6   re-execution=                        36.0
+MqWdtRest    paper=                        12.0   re-execution=                        56.3
+KTve         paper=                        0.73   re-execution=                        0.65
+KWdt         paper=                        0.74   re-execution=                        0.64
+DynTve       paper=                        27.0   re-execution=                       111.6
+DynWdt       paper=                        47.4   re-execution=                       176.6
+TveRankT     paper=                        3.60   re-execution=                        3.60
+TveL         paper=                       1.005   re-execution=                       1.005
+Shorter      paper=                        81.7   re-execution=                        81.7
+HomHasFour   paper=                        93.6   re-execution=                        93.6

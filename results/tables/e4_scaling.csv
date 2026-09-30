@@ -1,0 +1,48 @@
+planner,algo,pixels,t_ms,t_tess_ms
+A*,astar,40000,1.39745,
+A*,astar,90000,3.2358,
+A*,astar,160000,3.44785,
+A*,astar,360000,9.34195,
+A*,astar,640000,15.2598,
+A*,astar,1000000,24.364,
+A*,astar,1440000,39.978,
+Dijkstra,dijkstra,40000,4.2006,
+Dijkstra,dijkstra,90000,9.18605,
+Dijkstra,dijkstra,160000,17.1573,
+Dijkstra,dijkstra,360000,42.7546,
+Dijkstra,dijkstra,640000,65.7775,
+Dijkstra,dijkstra,1000000,90.0643,
+Dijkstra,dijkstra,1440000,166.983,
+PRM,prm,40000,609.74,
+PRM,prm,90000,615.973,
+PRM,prm,160000,627.352,
+PRM,prm,360000,658.35,
+PRM,prm,640000,670.7,
+PRM,prm,1000000,692.404,
+PRM,prm,1440000,720.307,
+WDT,teselado,40000,22.6578,4.02105
+WDT,teselado,90000,31.8585,9.0883
+WDT,teselado,160000,50.5225,17.3276
+WDT,teselado,360000,78.2317,40.8507
+WDT,teselado,640000,118.866,71.4595
+WDT,teselado,1000000,242.011,116.042
+WDT,teselado,1440000,315.967,160.463
+Theta*,theta,40000,134.876,
+Theta*,theta,90000,281.725,
+Theta*,theta,160000,329.87,
+Theta*,theta,360000,713.147,
+Theta*,theta,640000,1666.53,
+Theta*,theta,1000000,2206.39,
+Theta*,theta,1440000,5531.87,
+TVE (proposed),tve,40000,11.8927,1.573
+TVE (proposed),tve,90000,17.0531,3.44545
+TVE (proposed),tve,160000,27.166,6.39
+TVE (proposed),tve,360000,42.3998,16.1945
+TVE (proposed),tve,640000,71.172,28.1588
+TVE (proposed),tve,1000000,116.451,44.3058
+TVE (proposed),tve,1440000,155.345,68.0916
+Visibility graph,visibility,40000,1200.08,
+Visibility graph,visibility,90000,2814.53,
+Visibility graph,visibility,160000,4614.76,
+Visibility graph,visibility,360000,9106.01,
+Visibility graph,visibility,640000,17100.6,
